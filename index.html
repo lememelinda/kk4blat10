@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    	
+        <title>YOK LOGIN</title>
+        <link rel="stylesheet" href="login.css">
+         <link rel="stylesheet" href="login.css">
+         <script type="text/javascript" src="jquery.js"></script>
+    </head>
+   
+    <body>
+        <div class="container">
+          <h1 style="color: black"><b>Yok Login</b></h1>
+            <form>
+                <label >Username</label>
+        <br><br>
+        <input type="text" name="">
+
+        <br><br>
+
+        <label >Pasword</label>
+        <br><br>
+        <input type="password" name="" class="pas">
+
+        <br>
+
+        <input type="checkbox" name="" class="cbk"> Show password
+
+        <br>
+
+        <button style="background-color: #20B2AA">Login</button>
+
+            </form>
+        </div>     
+        <script type="text/javascript" >
+    $(document).ready(function(){
+
+       $('.cbk').click(function() {
+           if($(this).is(':checked')){
+               $('.pas').attr('type', 'text');
+           }
+           else{
+            $('.pas').attr('type', 'password');
+           }
+           
+           
+       })
+
+    });
+    
+    </script>
+    </body>
+</html>
